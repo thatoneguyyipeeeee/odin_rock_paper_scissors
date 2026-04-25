@@ -15,8 +15,8 @@
         */
         
         // computer
-        let humanScore = "0"
-        let computerScore = "0"
+        let humanScore = 0;
+        let computerScore = 0;
         function getComputerChoices() {
             const choices = ["rock", "paper", "scissors"];
 
@@ -93,33 +93,187 @@
 
         const [getHumanChoice1, getHumanChoice2, getHumanChoice3, getHumanChoice4, getHumanChoice5] = getHumanChoices();
         
+        // 1
+
         if(getHumanChoice1 == "rock" && getComputerChoice1 == "rock"){
             console.log("Tie! Rock is equal to rock.");
         }
         if(getHumanChoice1 == "rock" && getComputerChoice1 == "paper"){
             console.log("You lose! Paper beats rock");
+            computerScore += 1;
         }
         if(getHumanChoice1 == "rock" && getComputerChoice1 == "scissors"){
             console.log("You win! Rock beats scissors!");
+            humanScore += 1;
         }
         if(getHumanChoice1 == "paper" && getComputerChoice1 == "rock"){
             console.log("You win! Paper beats rock.");
+            humanScore += 1;
         }
         if(getHumanChoice1 == "paper" && getComputerChoice1 == "paper"){
             console.log("Tie! Paper and paper are equal.");
         }
         if(getHumanChoice1 == "paper" && getComputerChoice1 == "scissors"){
             console.log("You lose! Scissors beat paper.");
+            computerScore += 1;
         }
-        if(getComputerChoice1 == "scissors" && getComputerChoice1 == "rock"){
+        if(getHumanChoice1 == "scissors" && getComputerChoice1 == "rock"){
             console.log("You lose! Rock beats scissors")
+            computerScore += 1;
         }
-        if(getComputerChoice1 == "scissors" && getComputerChoice1 == "paper"){
+        if(getHumanChoice1 == "scissors" && getComputerChoice1 == "paper"){
             console.log("You win! Scissors beat paper.")
+            humanScore += 1;
         }
-        if(getComputerChoice1 == "scissors" && getComputerChoice1 == "scissors"){
+        if(getHumanChoice1 == "scissors" && getComputerChoice1 == "scissors"){
             console.log("Tie! Scissors and scissors are equal.")
         }
+
+        //2
+
+        if(getHumanChoice2 == "rock" && getComputerChoice2 == "rock"){
+            console.log("Tie! Rock is equal to rock.");
+        }
+        if(getHumanChoice2 == "rock" && getComputerChoice2 == "paper"){
+            console.log("You lose! Paper beats rock");
+            computerScore += 1;
+        }
+        if(getHumanChoice2 == "rock" && getComputerChoice2 == "scissors"){
+            console.log("You win! Rock beats scissors!");
+            humanScore += 1;
+        }
+        if(getHumanChoice2 == "paper" && getComputerChoice2 == "rock"){
+            console.log("You win! Paper beats rock.");
+            humanScore += 1;
+        }
+        if(getHumanChoice2 == "paper" && getComputerChoice2 == "paper"){
+            console.log("Tie! Paper and paper are equal.");
+        }
+        if(getHumanChoice2 == "paper" && getComputerChoice2 == "scissors"){
+            console.log("You lose! Scissors beat paper.");
+            computerScore += 1;
+        }
+        if(getHumanChoice2 == "scissors" && getComputerChoice2 == "rock"){
+            console.log("You lose! Rock beats scissors")
+            computerScore += 1;
+        }
+        if(getHumanChoice2 == "scissors" && getComputerChoice2 == "paper"){
+            console.log("You win! Scissors beat paper.")
+            humanScore += 1;
+        }
+        if(getHumanChoice2 == "scissors" && getComputerChoice2 == "scissors"){
+            console.log("Tie! Scissors and scissors are equal.")
+        }
+
+        //3 
+
+        if(getHumanChoice3 == "rock" && getComputerChoice3 == "rock"){
+            console.log("Tie! Rock is equal to rock.");
+        }
+        if(getHumanChoice3 == "rock" && getComputerChoice3 == "paper"){
+            console.log("You lose! Paper beats rock");
+            computerScore += 1;
+        }
+        if(getHumanChoice3 == "rock" && getComputerChoice3 == "scissors"){
+            console.log("You win! Rock beats scissors!");
+            humanScore += 1;
+        }
+        if(getHumanChoice3 == "paper" && getComputerChoice3 == "rock"){
+            console.log("You win! Paper beats rock.");
+            humanScore += 1;
+        }
+        if(getHumanChoice3 == "paper" && getComputerChoice3 == "paper"){
+            console.log("Tie! Paper and paper are equal.");
+        }
+        if(getHumanChoice3 == "paper" && getComputerChoice3 == "scissors"){
+            console.log("You lose! Scissors beat paper.");
+            computerScore += 1;
+        }
+        if(getHumanChoice3 == "scissors" && getComputerChoice3 == "rock"){
+            console.log("You lose! Rock beats scissors")
+            computerScore += 1;
+        }
+        if(getHumanChoice3 == "scissors" && getComputerChoice3 == "paper"){
+            console.log("You win! Scissors beat paper.")
+            humanScore += 1;
+        }
+        if(getHumanChoice3 == "scissors" && getComputerChoice3 == "scissors"){
+            console.log("Tie! Scissors and scissors are equal.")
+        }
+
+        //4
+
+        if(getHumanChoice4== "rock" && getComputerChoice4 == "rock"){
+            console.log("Tie! Rock is equal to rock.");
+        }
+        if(getHumanChoice4 == "rock" && getComputerChoice4 == "paper"){
+            console.log("You lose! Paper beats rock");
+            computerScore += 1;
+        }
+        if(getHumanChoice4 == "rock" && getComputerChoice4 == "scissors"){
+            console.log("You win! Rock beats scissors!");
+            humanScore += 1;
+        }
+        if(getHumanChoice4 == "paper" && getComputerChoice4 == "rock"){
+            console.log("You win! Paper beats rock.");
+            humanScore += 1;
+        }
+        if(getHumanChoice4 == "paper" && getComputerChoice4 == "paper"){
+            console.log("Tie! Paper and paper are equal.");
+        }
+        if(getHumanChoice4 == "paper" && getComputerChoice4 == "scissors"){
+            console.log("You lose! Scissors beat paper.");
+            computerScore += 1;
+        }
+        if(getHumanChoice4 == "scissors" && getComputerChoice4 == "rock"){
+            console.log("You lose! Rock beats scissors")
+            computerScore += 1;
+        }
+        if(getHumanChoice4 == "scissors" && getComputerChoice4 == "paper"){
+            console.log("You win! Scissors beat paper.")
+            humanScore += 1;
+        }
+        if(getHumanChoice4 == "scissors" && getComputerChoice4 == "scissors"){
+            console.log("Tie! Scissors and scissors are equal.")
+        }
+
+        //5
+
+        if(getHumanChoice5 == "rock" && getComputerChoice5 == "rock"){
+            console.log("Tie! Rock is equal to rock.");
+        }
+        if(getHumanChoice5 == "rock" && getComputerChoice5 == "paper"){
+            console.log("You lose! Paper beats rock");
+            computerScore += 1;
+        }
+        if(getHumanChoice5 == "rock" && getComputerChoice5 == "scissors"){
+            console.log("You win! Rock beats scissors!");
+            humanScore += 1;
+        }
+        if(getHumanChoice5 == "paper" && getComputerChoice5 == "rock"){
+            console.log("You win! Paper beats rock.");
+            humanScore += 1;
+        }
+        if(getHumanChoice5 == "paper" && getComputerChoice5 == "paper"){
+            console.log("Tie! Paper and paper are equal.");
+        }
+        if(getHumanChoice5 == "paper" && getComputerChoice5 == "scissors"){
+            console.log("You lose! Scissors beat paper.");
+            computerScore += 1;
+        }
+        if(getHumanChoice5 == "scissors" && getComputerChoice5 == "rock"){
+            console.log("You lose! Rock beats scissors")
+            computerScore += 1;
+        }
+        if(getHumanChoice5 == "scissors" && getComputerChoice5 == "paper"){
+            console.log("You win! Scissors beat paper.")
+            humanScore += 1;
+        }
+        if(getHumanChoice5 == "scissors" && getComputerChoice5 == "scissors"){
+            console.log("Tie! Scissors and scissors are equal.")
+        }
+
+        console.log("Your points: " + humanScore + "  Computer points: " + computerScore)
     </script>
 </body>
 </html>
